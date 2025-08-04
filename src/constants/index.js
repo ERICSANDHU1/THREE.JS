@@ -29,46 +29,34 @@ const words = [
 ];
 
 const counterItems = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
+    { value: 1.5, suffix: "+", label: "Years of Experience" },
+    { value: 5, suffix: "+", label: "Satisfied Clients" },
+    { value: 10, suffix: "+", label: "Completed Projects" },
     { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [
-    {
-        imgPath: "/images/logos/company-logo-1.png",
-    },
+    
     {
         imgPath: "/images/logos/company-logo-2.png",
     },
-    {
-        imgPath: "/images/logos/company-logo-3.png",
-    },
+   
     {
         imgPath: "/images/logos/company-logo-4.png",
     },
     {
         imgPath: "/images/logos/company-logo-5.png",
     },
-    {
-        imgPath: "/images/logos/company-logo-6.png",
-    },
+   
     {
         imgPath: "/images/logos/company-logo-7.png",
     },
-    {
-        imgPath: "/images/logos/company-logo-8.png",
-    },
+
     {
         imgPath: "/images/logos/company-logo-9.png",
     },
-    {
-        imgPath: "/images/logos/company-logo-10.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-11.png",
-    },
+    
+    
 ];
 
 const abilities = [
@@ -158,31 +146,48 @@ const expCards = [
             "Optimized web applications for maximum speed and scalability.",
         ],
     },
-    {
-        review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
-        title: "Full Stack Developer",
-        date: "June 2020 - December 2023",
-        responsibilities: [
-            "Led the development of Docker's web applications, focusing on scalability.",
-            "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-            "Contributed to open-source projects that were used with the Docker ecosystem.",
-        ],
-    },
-    {
-        review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "React Native Developer",
-        date: "March 2019 - May 2020",
-        responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            "Improved app performance and user experience through code optimization and testing.",
-            "Coordinated with the product team to implement features based on feedback.",
-        ],
-    },
+  {
+    review: "Adrian began his journey mastering HTML, CSS, and JavaScript, and quickly evolved into building modern frontend applications. His strong design sense and technical growth have shaped him into a creative and performance-focused developer.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "Frontend Developer – React & Tailwind CSS",
+    date: "2018 - Present",
+    responsibilities: [
+      "Started with HTML, CSS, and JavaScript to build responsive layouts.",
+      "Built UI components with React and styled them using Tailwind CSS.",
+      "Created a 3D portfolio using Three.js and GSAP for animations.",
+      "Focused on clean code, responsiveness, and smooth user interactions.",
+    ],
+  },
+  {
+    review: "Adrian's transition into fullstack development allowed him to build scalable applications from end to end. His backend work reflects a solid understanding of databases, APIs, and secure architecture.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Full Stack Developer – MERN & Next.js",
+    date: "2020 - Present",
+    responsibilities: [
+      "Built fullstack apps using MongoDB, Express, React, and Node.js.",
+      "Created dynamic pages and APIs using Next.js for performance and SEO.",
+      "Handled user auth, REST APIs, and backend logic securely.",
+      "Used Mongoose for data modeling and integrated frontend with backend flows.",
+    ],
+  },
+  {
+    review: "Adrian’s recent work combines intelligent backend systems with creative frontend experiences. By integrating AI platforms like Convx and Vapi.ai with advanced 3D and animation tools like Three.js and GSAP, he demonstrates a unique blend of technical depth and visual innovation.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo3.png",
+    title: "Creative Full Stack Developer – AI & 3D Experiences",
+    date: "2023 - Present",
+    responsibilities: [
+      "Integrated Convx and Vapi.ai APIs for voice/chat automation.",
+      "Managed conversational data using MongoDB and Node.js.",
+      "Built real-time webhooks and backend services for AI features.",
+      "Crafted 3D and animated UIs using Three.js and GSAP.",
+      "Blended backend logic with interactive, immersive frontends.",
+    ],
+  }
 ];
+
 
 const expLogos = [
     {
@@ -246,22 +251,24 @@ const testimonials = [
 
 const socialImgs = [
     {
-        name: "insta",
-        imgPath: "/images/insta.png",
+        name: "Leetcode",
+        url: "https://leetcode.com/u/ericsandhu1/",
+        imgPath: "/images/Leetcode1.png"
     },
     {
-        name: "fb",
-        imgPath: "/images/fb.png",
+        name: "Github",
+        url: "https://github.com/ERICSANDHU1",
+        imgPath: "/images/Github.png"
     },
     {
         name: "x",
-        url: "",
-        imgPath: "/images/x.png",
+        url: "https://x.com/ERIC_FFX",
+        imgPath: "/images/x.png"
     },
     {
         name: "linkedin",
-        url: "",
-        imgPath: "/images/linkedin.png",
+        url: "https://www.linkedin.com/in/eric-sandhu-277b85307/",
+        imgPath: "/images/linkedin.png"
     },
 ];
 

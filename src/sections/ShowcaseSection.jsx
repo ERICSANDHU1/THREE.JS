@@ -49,16 +49,16 @@ const AppShowcase = () => {
                 <div className="showcaselayout">
                     <div ref={rydeRef} className="first-project-wrapper">
                         <div className="image-wrapper">
-                            <img src="/images/project1.png" alt="Ryde App Interface" />
+                            <img src="/images/image.png" alt="Ryde App Interface" />
                         </div>
                         <div className="text-content">
                             <h2>
-                                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                                called Ryde
+                                Built a voice-interactive AI web app offering mock interviews, guided meditation,
+                                 topic lectures, language skill practice, and Q&A preparation.
                             </h2>
                             <p className="text-white-50 md:text-xl">
-                                An app built with React Native, Expo, & TailwindCSS for a fast,
-                                user-friendly experience.
+                                 Integrated GPT for dynamic conversations and AssemblyAI + Vapi.ai for
+                                  real-time voice interaction with secure user auth.
                             </p>
                         </div>
                     </div>
@@ -67,18 +67,18 @@ const AppShowcase = () => {
                         <div className="project" ref={libraryRef}>
                             <div className="image-wrapper bg-[#FFEFDB]">
                                 <img
-                                    src="/images/project2.png"
+                                    src="/images/project2.jpg"
                                     alt="Library Management Platform"
                                 />
                             </div>
-                            <h2>The Library Management Platform</h2>
+                            <h2>The SaaS Dashboard Platform</h2>
                         </div>
 
                         <div className="project" ref={ycDirectoryRef}>
                             <div className="image-wrapper bg-[#FFE7EB]">
                                 <img src="/images/project3.png" alt="YC Directory App" />
                             </div>
-                            <h2>YC Directory - A Startup Showcase App</h2>
+                            <h2>Echo – The Virtual Assistant Webpage using JavaScript</h2>
                         </div>
                     </div>
                 </div>
