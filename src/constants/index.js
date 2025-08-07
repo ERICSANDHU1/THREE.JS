@@ -134,24 +134,13 @@ const techStackIcons = [
 ];
 
 const expCards = [
-    {
-        review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
-        title: "Frontend Developer",
-        date: "January 2023 - Present",
-        responsibilities: [
-            "Developed and maintained user-facing features for the Hostinger website.",
-            "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-            "Optimized web applications for maximum speed and scalability.",
-        ],
-    },
+    
   {
     review: "Adrian began his journey mastering HTML, CSS, and JavaScript, and quickly evolved into building modern frontend applications. His strong design sense and technical growth have shaped him into a creative and performance-focused developer.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer – React & Tailwind CSS",
-    date: "2018 - Present",
+    logoPath: "/images/html.jpg",
+    title: "HTML, CSS, and JavaScript",
+    date: "Jun 2024 - Jul 2024",
     responsibilities: [
       "Started with HTML, CSS, and JavaScript to build responsive layouts.",
       "Built UI components with React and styled them using Tailwind CSS.",
@@ -162,9 +151,9 @@ const expCards = [
   {
     review: "Adrian's transition into fullstack development allowed him to build scalable applications from end to end. His backend work reflects a solid understanding of databases, APIs, and secure architecture.",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+    logoPath: "/images/next.jpeg",
     title: "Full Stack Developer – MERN & Next.js",
-    date: "2020 - Present",
+    date: "Jul 2024 - May 2025",
     responsibilities: [
       "Built fullstack apps using MongoDB, Express, React, and Node.js.",
       "Created dynamic pages and APIs using Next.js for performance and SEO.",
@@ -173,13 +162,13 @@ const expCards = [
     ],
   },
   {
-    review: "Adrian’s recent work combines intelligent backend systems with creative frontend experiences. By integrating AI platforms like Convx and Vapi.ai with advanced 3D and animation tools like Three.js and GSAP, he demonstrates a unique blend of technical depth and visual innovation.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
+    review: "Eric’s recent work combines intelligent backend systems with creative frontend experiences. By integrating AI platforms like Convx and Vapi.ai with advanced 3D and animation tools like Three.js and GSAP, he demonstrates a unique blend of technical depth and visual innovation.",
+    imgPath: "/images/three.png",
+    logoPath: "/images/three.png",
     title: "Creative Full Stack Developer – AI & 3D Experiences",
-    date: "2023 - Present",
+    date: "May 2025- Present",
     responsibilities: [
-      "Integrated Convx and Vapi.ai APIs for voice/chat automation.",
+      "Integrated ElevenLabs and Vapi.ai APIs for voice/chat automation.",
       "Managed conversational data using MongoDB and Node.js.",
       "Built real-time webhooks and backend services for AI features.",
       "Crafted 3D and animated UIs using Three.js and GSAP.",
