@@ -1,12 +1,30 @@
-# React + Vite
+# 🎨 3D Portfolio – Built with Three.js, GSAP & Sketchfab Models
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my interactive 3D portfolio, a creative web experience that blends real-time 3D rendering and smooth motion design. This project showcases my skills in frontend development, animation, and 3D integration — built using **Three.js**, **GSAP**, and custom models sourced from **Sketchfab**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🌀 **3D Landing Page** – Immersive user interface rendered with Three.js.
+- 🎬 **Smooth Animations** – Timeline-based animations powered by GSAP.
+- 🧩 **Sketchfab Models** – High-quality 3D assets integrated and optimized.
+- 🌐 **Responsive Design** – Fully responsive layout for desktop and mobile.
+- 🎨 **Creative Sections** – About, Projects, Contact – all animated with a personal touch.
+- 💡 **Scroll & Hover Interactions** – Dynamic behavior based on user input.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Tech            | Description                             |
+|------------------|--------------------------------------- |
+| **Three.js**     | WebGL 3D rendering framework           |
+| **GSAP**         | JavaScript animation library           |
+| **HTML/CSS/JS**  | Base for layout and interactivity      |
+| **Sketchfab**    | Source for 3D models                   |
+| **Vite** or **Webpack** | Bundler for fast development    |
+
+---
+
+
