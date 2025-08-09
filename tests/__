@@ -1,0 +1,164 @@
+We are only given two files: .gitignore and README.md. We cannot write tests for the application logic because we don't have the source code. However, we can write tests to check the existence and content of these two files.
+
+We'll create two tests:
+
+1. For .gitignore:
+   - Check that the file exists.
+   - Check that it contains specific patterns that we expect (like ignoring node_modules, dist, logs, etc.)
+
+2. For README.md:
+   - Check that the file exists.
+   - Check that it contains the project title and key sections (Features, Tech Stack).
+
+But note: We are writing a Jest test. We can use the `fs` module to read the files.
+
+However, note that Jest tests run in a Node.js environment, so we can use `fs`.
+
+We'll create a test file named `projectMeta.test.js` (or similar). Since the tests are about project metadata, we can call it `projectMeta.test.js`.
+
+Let's write the tests:
+
+Test for .gitignore:
+- We'll read the .gitignore file and check for the presence of:
+  - 'node_modules'
+  - 'dist'
+  - 'dist-ssr'
+  - '*.log'
+  - '.vscode'
+  - '.idea'
+
+Test for README.md:
+- We'll check for:
+  - The title: '# 🎨 3D Portfolio – Built with Three.js, GSAP & Sketchfab Models'
+  - The '## 🚀 Features' section
+  - The '## 🛠️ Tech Stack' section
+  - Some of the features and tech stack items.
+
+But note: the README content might change slightly (like whitespace). We can use a regex or check for substrings.
+
+However, note that the user might have provided the exact README content. We'll use the exact strings as in the provided README.
+
+But caution: the README in the FILES section is exactly as provided. We'll use that.
+
+But in the test, we can only check for the presence of the main headings and some key content.
+
+Let's design:
+
+For README:
+- Check that the file contains the title string (exactly as above, but note the emoji might be represented differently? But in the provided string it's given as `# 🎨 3D Portfolio ...`).
+- Check that it contains the string '## 🚀 Features'
+- Check that it contains the string '## 🛠️ Tech Stack'
+- Also, we can check for the presence of some feature items and tech stack items.
+
+But note: the test might break if the README is updated. However, the test is to ensure the critical parts are present.
+
+We'll write:
+
+```javascript
+const fs = require('fs');
+const path = require('path');
+
+describe('Project Metadata', () => {
+  describe('.gitignore', () => {
+    const gitignorePath = path.join(__dirname, '..', '.gitignore');
+    let gitignoreContent;
+
+    beforeAll(() => {
+      gitignoreContent = fs.readFileSync(gitignorePath, 'utf8');
+    });
+
+    it('should exist', () => {
+      expect(fs.existsSync(gitignorePath)).toBe(true);
+    });
+
+    it('should ignore node_modules', () => {
+      expect(gitignoreContent).toMatch(/node_modules/);
+    });
+
+    it('should ignore dist and dist-ssr', () => {
+      expect(gitignoreContent).toMatch(/dist/);
+      expect(gitignoreContent).toMatch(/dist-ssr/);
+    });
+
+    it('should ignore log files', () => {
+      expect(gitignoreContent).toMatch(/\*\.log/);
+    });
+
+    it('should ignore editor files (e.g., .vscode, .idea)', () => {
+      expect(gitignoreContent).toMatch(/\.vscode/);
+      expect(gitignoreContent).toMatch(/\.idea/);
+    });
+  });
+
+  describe('README.md', () => {
+    const readmePath = path.join(__dirname, '..', 'README.md');
+    let readmeContent;
+
+    beforeAll(() => {
+      readmeContent = fs.readFileSync(readmePath, 'utf8');
+    });
+
+    it('should exist', () => {
+      expect(fs.existsSync(readmePath)).toBe(true);
+    });
+
+    it('should contain the project title', () => {
+      const title = '# 🎨 3D Portfolio – Built with Three.js, GSAP & Sketchfab Models';
+      expect(readmeContent).toContain(title);
+    });
+
+    it('should have a Features section', () => {
+      expect(readmeContent).toContain('## 🚀 Features');
+    });
+
+    it('should have a Tech Stack section', () => {
+      expect(readmeContent).toContain('## 🛠️ Tech Stack');
+    });
+
+    it('should list specific features', () => {
+      const features = [
+        '🌀 **3D Landing Page**',
+        '🎬 **Smooth Animations**',
+        '🧩 **Sketchfab Models**',
+        '🌐 **Responsive Design**',
+        '🎨 **Creative Sections**',
+        '💡 **Scroll & Hover Interactions**'
+      ];
+      features.forEach(feature => {
+        expect(readmeContent).toContain(feature);
+      });
+    });
+
+    it('should list specific technologies in the Tech Stack table', () => {
+      const techs = [
+        '**Three.js**',
+        '**GSAP**',
+        '**HTML/CSS/JS**',
+        '**Sketchfab**',
+        '**Vite** or **Webpack**'
+      ];
+      techs.forEach(tech => {
+        expect(readmeContent).toContain(tech);
+      });
+    });
+  });
+});
+```
+
+Note: We are using `path.join(__dirname, '..', ...)` to go up one level from the test directory (assuming the test is in a `tests` or `__tests__` folder) to the root. If the test is in the root, we can remove the `'..'`. But typically, tests are in a separate folder.
+
+But the problem: the user didn't specify the test directory. We can assume the test file is placed in a `__tests__` directory at the root. Then the `..` will point to the root.
+
+Alternatively, we can run the test from the root without a test directory? But that is not common.
+
+We'll write the test file to be placed in a `__tests__` directory. If the user places it elsewhere, they might adjust the path.
+
+Alternatively, we can use `path.resolve` to be safe.
+
+But let's stick to the above.
+
+Also, note: the test for the .gitignore might have false positives because the pattern might be commented. But the provided .gitignore doesn't have comments for those patterns. We are just checking for the presence of the string.
+
+We are not checking the entire file, just the critical parts.
+
+We'll output the test file as:
