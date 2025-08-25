@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
-import TechIconCardExperience from "../components/models/TechLogos/TechIcon";
+import TechIconCardExperience from "../components/Models/TechLogos/TechIcon";
 import { techStackIcons } from "../constants";
 // import { techStackImgs } from "../constants";
 
