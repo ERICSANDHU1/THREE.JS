@@ -127,7 +127,7 @@ const techStackIcons = [
     },
     {
         name: "Project Manager",
-        modelPath: "/Models/git-svg-transformed.glb",
+        modelPath: "/models/git-svg-transformed.glb",
         scale: 0.05,
         rotation: [0, -Math.PI / 4, 0],
     },
